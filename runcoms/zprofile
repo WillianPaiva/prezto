@@ -10,15 +10,14 @@
 #
 
 if [[ "$OSTYPE" == darwin* ]]; then
-  export BROWSER='open'
+  export BROWSER='chrome'
 fi
 
 #
 # Editors
 #
-
-export EDITOR='nano'
-export VISUAL='nano'
+export EDITOR='vim'
+export VISUAL='vim'
 export PAGER='less'
 
 #
@@ -26,7 +25,7 @@ export PAGER='less'
 #
 
 if [[ -z "$LANG" ]]; then
-  export LANG='en_US.UTF-8'
+  export LANG='en_GB.UTF-8'
 fi
 
 #
@@ -43,7 +42,7 @@ typeset -gU cdpath fpath mailpath path
 
 # Set the list of directories that Zsh searches for programs.
 path=(
-  /usr/local/{bin,sbin}
+ "/opt/java/bin:/usr/share/perl5/vendor_perl/auto/share/dist/Cope:/usr/local/bin:/usr/local/sbin"
   $path
 )
 
@@ -75,3 +74,9 @@ TMPPREFIX="${TMPDIR%/}/zsh"
 if [[ ! -d "$TMPPREFIX" ]]; then
   mkdir -p "$TMPPREFIX"
 fi
+
+
+export PATH=$PATH:/opt/java/bin:/usr/share/perl5/vendor_perl/auto/share/dist/Cope
+export SSH_KEY_PATH="~/.ssh/dsa_id"
+
+
