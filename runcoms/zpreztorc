@@ -32,14 +32,25 @@ zstyle ':prezto:load' pmodule \
   'spectrum' \
   'utility' \
   'completion' \
-  'prompt'
+  'prompt'\
+  'git' \
+  'command-not-found' \
+  'dpkg' \
+  'emacs' \
+  'fasd' \
+  'helper' \
+  'pacman' \
+  'python' \
+  'spectrum' \
+  'ssh' \
+  'syntax-highlighting' 
 
 #
 # Editor
 #
 
 # Set the key mapping style to 'emacs' or 'vi'.
-zstyle ':prezto:module:editor' key-bindings 'emacs'
+zstyle ':prezto:module:editor' key-bindings 'vi'
 
 # Auto convert .... to ../..
 # zstyle ':prezto:module:editor' dot-expansion 'yes'
@@ -76,7 +87,7 @@ zstyle ':prezto:module:editor' key-bindings 'emacs'
 #
 
 # Set the Pacman frontend.
-# zstyle ':prezto:module:pacman' frontend 'yaourt'
+zstyle ':prezto:module:pacman' frontend 'yaourt'
 
 #
 # Prompt
@@ -117,18 +128,18 @@ zstyle ':prezto:module:prompt' theme 'sorin'
 
 # Set syntax highlighters.
 # By default, only the main highlighter is enabled.
-# zstyle ':prezto:module:syntax-highlighting' highlighters \
-#   'main' \
-#   'brackets' \
-#   'pattern' \
-#   'cursor' \
-#   'root'
+ zstyle ':prezto:module:syntax-highlighting' highlighters \
+   'main' \
+   'brackets' \
+   'pattern' \
+   'cursor' \
+   'root'
 #
 # Set syntax highlighting styles.
 # zstyle ':prezto:module:syntax-highlighting' styles \
 #   'builtin' 'bg=blue' \
-#   'command' 'bg=blue' \
-#   'function' 'bg=blue'
+#   'command' 'bg=green' \
+#   'function' 'bg=purple'
 
 #
 # Terminal
