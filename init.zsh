@@ -138,4 +138,5 @@ alias mv="amv -g"
 
 alias cp="acp -g"
 
+alias ccat="pygmentize -O style=monokai -f console256 -g"
 
