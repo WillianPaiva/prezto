@@ -43,7 +43,8 @@ zstyle ':prezto:load' pmodule \
   'python' \
   'spectrum' \
   'ssh' \
-  'syntax-highlighting' 
+  'syntax-highlighting'\
+  'tmux'
 
 #
 # Editor
@@ -159,7 +160,7 @@ zstyle ':prezto:module:terminal:tab-title' format '%m: %s'
 #
 
 # Auto start a session when Zsh is launched in a local terminal.
-# zstyle ':prezto:module:tmux:auto-start' local 'yes'
+#zstyle ':prezto:module:tmux:auto-start' local 'yes'
 
 # Auto start a session when Zsh is launched in a SSH connection.
-# zstyle ':prezto:module:tmux:auto-start' remote 'yes'
+#zstyle ':prezto:module:tmux:auto-start' remote 'yes'
