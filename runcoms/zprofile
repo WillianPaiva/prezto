@@ -21,6 +21,8 @@ export VISUAL='vim'
 export PAGER='less'
 export TERM='screen-256color'
 export KEYTIMEOUT=1
+
+
 #
 #rt KEYTIMEOUT=1
 # Language
