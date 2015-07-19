@@ -134,9 +134,6 @@ streaming() {
  }
 
 
-alias mv="amv -g"
-
-alias cp="acp -g"
-
-alias ccat="pygmentize -O style=monokai -f console256 -g"
+export TERM=xterm-256color
+alias cat="pygmentize -O style=monokai -f console256 -g"
 
