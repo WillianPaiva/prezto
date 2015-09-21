@@ -1,11 +1,12 @@
-#
+
 # Executes commands at the start of an interactive session.
 #
 # Authors:
 #   Sorin Ionescu <sorin.ionescu@gmail.com>
 #
-
-
+alias ctags="/usr/local/bin/ctags"
+alias v='NVIM_TUI_ENABLE_TRUE_COLOR=1 nvim'
+alias vim='NVIM_TUI_ENABLE_TRUE_COLOR=1 nvim'
 alias fuck='$(thefuck $(fc -ln -1))'
 # You can use whatever you want as an alias, like for mondays:
 alias FUCK='fuck'
@@ -39,3 +40,4 @@ bindkey -s "^[Oo" "/"
 # Customize to your needs...
 
 
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
