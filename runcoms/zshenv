@@ -10,7 +10,8 @@ if [[ "$SHLVL" -eq 1 && ! -o LOGIN && -s "${ZDOTDIR:-$HOME}/.zprofile" ]]; then
   source "${ZDOTDIR:-$HOME}/.zprofile"
 fi
 
-export PATH=$PATH:/opt/java/bin:/usr/share/perl5/vendor_perl/auto/share/dist/Cope:/home/willian/.gem/ruby/2.1.0/bi:/opt/cuda/bin:/home/willian/bin:/home/willian/.lib/pyroscope/bin
 export GLPATH=/usr/lib make
 export SSH_KEY_PATH="~/.ssh/dsa_id"
 export NNTPSERVER='snews://news.u-bordeaux1.fr:563'
+export PATH="/home/willian/bin/:$PATH" 
+
