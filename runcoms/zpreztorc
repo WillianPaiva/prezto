@@ -25,12 +25,14 @@ zstyle ':prezto:load' zfunction 'zargs' 'zmv'
 # The order matters.
 zstyle ':prezto:load' pmodule \
   'environment' \
+  'archive' \
   'editor' \
   'history' \
   'directory' \
   'spectrum' \
   'utility' \
   'completion' \
+  'fasd' \
   'prompt'\
   'git' \
   'command-not-found' \
@@ -39,12 +41,10 @@ zstyle ':prezto:load' pmodule \
   'fasd' \
   'helper' \
   'pacman' \
-  'python' \
   'spectrum' \
   'ssh' \
   'syntax-highlighting'\
-  'tmux'\
-  'ruby'
+  'tmux'
 
 #
 # Editor
@@ -97,7 +97,7 @@ zstyle ':prezto:module:pacman' frontend 'yaourt'
 # Set the prompt theme to load.
 # Setting it to 'random' loads a random theme.
 # Auto set to 'off' on dumb terminals.
-zstyle ':prezto:module:prompt' theme 'sorin'
+zstyle ':prezto:module:prompt' theme 'pure'
 
 #
 # Ruby
