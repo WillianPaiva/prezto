@@ -136,4 +136,5 @@ streaming() {
 
 export TERM=xterm-256color
 alias cat="pygmentize -O style=monokai -f console256 -g"
+alias git="hub"
 

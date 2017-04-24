@@ -21,7 +21,8 @@ export VISUAL='vim'
 export PAGER='less'
 export TERM='screen-256color'
 export KEYTIMEOUT=1
-
+export PANEL_FIFO="/tmp/panel-fifo"
+export GTAGSLABEL=pygments
 
 #
 #rt KEYTIMEOUT=1
@@ -78,4 +79,7 @@ TMPPREFIX="${TMPDIR%/}/zsh"
 if [[ ! -d "$TMPPREFIX" ]]; then
   mkdir -p "$TMPPREFIX"
 fi
-[[ -z $DISPLAY && $XDG_VTNR -eq 1 ]] && exec startx
+#[[ -z $DISPLAY && $XDG_VTNR -eq 1 ]] && exec startx
+#if [ -z "$DISPLAY" ] && [ -n "$XDG_VTNR" ] && [ "$XDG_VTNR" -eq 1 ]; then
+#  exec startx
+#fi

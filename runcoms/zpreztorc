@@ -46,6 +46,7 @@ zstyle ':prezto:load' pmodule \
   'syntax-highlighting'\
   'history-substring-search'\
   'autosuggestions'\
+  'python'\
   'prompt'
 
 #
@@ -177,3 +178,4 @@ zstyle ':prezto:module:terminal:tab-title' format '%m: %s'
 
 # Integrate with iTerm2.
 # zstyle ':prezto:module:tmux:iterm' integrate 'yes'
+zstyle ':prezto:module:python:info:virtualenv' format 'virtualenv:%v'
