@@ -6,10 +6,13 @@
 #
 # You can use whatever you want as an alias, like for mondays:
 alias FUCK='fuck'
-alias em='emacsclient -t -s /tmp/emacs1000/server'
-alias emacs='emacsclient -nc  -s /tmp/emacs1000/server'
+alias comp='docker-compose'
+alias steam='LD_PRELOAD=~/.local/share/Steam/ubuntu12_32/steamui.so steam-native'
+alias em='emacsclient -t --socket-name /tmp/emacs1000/server'
+alias emacs='emacsclient -nc --socket-name /tmp/emacs1000/server'
 alias vim='NVIM_TUI_ENABLE_TRUE_COLOR=1 nvim'
 alias fuck='$(thefuck $(fc -ln -1))'
+alias gitk="LD_PRELOAD=/usr/lib/libcurl.so.3 gitkraken"
 # Source Prezto.
 if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
   source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
@@ -40,3 +43,6 @@ bindkey -s "^[Oo" "/"
 
 
 export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=242'
+export PROJECT_HOME="$HOME/Developer"
+autoload bashcompinit
+

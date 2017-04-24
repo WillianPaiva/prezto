@@ -9,14 +9,17 @@
 if [[ "$SHLVL" -eq 1 && ! -o LOGIN && -s "${ZDOTDIR:-$HOME}/.zprofile" ]]; then
   source "${ZDOTDIR:-$HOME}/.zprofile"
 fi
-
 export GLPATH=/usr/lib make
 export SSH_KEY_PATH="~/.ssh/dsa_id"
 export NNTPSERVER='snews://news.u-bordeaux1.fr:563'
-export PATH="/home/willian/bin/:$PATH" 
+export PATH="$HOME/.config/composer/vendor/bin/:/home/willian/bin/:$PATH:/root/.gem/ruby/3.3.0/bin:$HOME/Documents/hadoop/hadoop-2.7.3/bin:$HOME/Documents/hadoop/hadoop-2.7.3/sbin:$HOME/.config/panel" 
 export XDG_CONFIG_HOME=$HOME/.config
 export XDG_DATA_HOME=$HOME/.local/share
 export XDG_CACHE_HOME=$HOME/.cache
 export XDG_DATA_DIRS=/usr/local/share:/usr/share
 export XDG_CONFIG_DIRS=/etc/xdg
-
+export GOPATH=~/go
+export PATH="$PATH:$GOPATH/bin:$HOME/.cabal/bin:$HOME/.bin"
+export LD_LIBRARY_PATH=/usr/lib32/nvidia:/usr/lib/nvidia:$LD_LIBRARY_PATH
+export PATH=/home/willian/.gem/ruby/2.4.0/bin:${PATH}
+#export XDG_RUNTIME_DIR=/run/user/`id -u`
