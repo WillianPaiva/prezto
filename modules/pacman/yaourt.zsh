@@ -11,8 +11,8 @@
 
 # Disable color.
 if ! zstyle -t ':prezto:module:pacman:yaourt' color; then
-  alias pacman='yaourt --nocolor'
+  alias pacman='yay'
 fi
 
 # Manages .pac* files.
-alias pacc='yaourt -C'
+alias pac='yay'

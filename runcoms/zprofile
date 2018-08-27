@@ -86,7 +86,7 @@ export ACCESS_TOKEN_SECRET='fHBhTsM1SgCfyna5XYuJ0w0U9T5ReiSrqOAz8CgggZg2U'
 # Ensure path arrays do not contain duplicates.
 typeset -gU cdpath fpath mailpath path
 
-# Set the the list of directories that cd searches.
+# Set the list of directories that cd searches.
 # cdpath=(
 #   $cdpath
 # )
